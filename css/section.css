@@ -1,0 +1,23 @@
+.section__subheader {
+    color: #302828;
+    background-color: #f5f5dc;
+    text-align: center;
+    border-style: outset;
+    font-weight: normal;
+    text-shadow: 1px 2px 5px #5d5345;
+    padding: 6px;
+
+}
+
+.section__paragraph {
+    text-align: justify;
+    padding: 15px;
+}
+
+.section__paragraph--brighter {
+    color: #1d090d;
+}
+
+.paragraph__interestingElement {
+    color: #674102;
+}

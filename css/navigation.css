@@ -1,0 +1,32 @@
+.navigation {
+    padding: 20px;
+    text-align: center;
+    font-size: 23px;
+}
+
+.navigation__list {
+    list-style-type: none;
+}
+
+.navigation__link {
+    text-decoration: none;
+    color: #0f100e;
+}
+
+.navigation__link:visited {
+    color: #5d5345;
+}
+
+.navigation__link:focus {
+    outline: 2px solid #000;
+}
+
+.navigation__link:hover {
+    color: #5d5345;
+    border-bottom: 1px solid;
+}
+
+.navigation__link:active {
+    color: #674102;
+    border: 2px solid #000;
+}

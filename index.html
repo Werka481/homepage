@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weronika Łopato-Jędrasik - pierwsza strona</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/navigation.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/section.css" rel="stylesheet">
+    <link href="css/table.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <script defer src="js/script.js"></script>
+
+</head>
+
+<body class="body js-body">
+    <header class="header">
+        <h1 class="header__title">Weronika Łopato-Jędrasik - wizytówka</h1>
+        <p class="header__paragraph">
+            <button class="header__buttonThemeElement js-header__buttonTheme">Włącz <span
+                    class="js-themeName">ciemniejszy</span> motyw</button>
+        </p>
+    </header>
+
+    <nav class="navigation">
+        <ul class="navigation__list">
+            <li> <a href="#prywatnie" title="Kilka słów o moim życiu prywatnym" class="navigation__link">O mnie</a></li>
+            <li> <a href="#zawodowo" title="Opis ukończonych studiów i pracy" class="navigation__link">Wykształcenie</a>
+            </li>
+            <li> <a href="#hobby" title="Opis moich zajęć w wolnym czasie" class="navigation__link">Zainteresowania</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <img class="imageElement js-imageElement" src="images/werka.jpg" alt="Weronika Jędrasik">
+        <p><button class="buttonElement js-buttonElement">Usuń obrazek</button></p>
+        <section class="section" id="prywatnie">
+            <h2 class="section__subheader">Prywatnie</h2>
+            <p class="section__paragraph">Mam na imię Weronika. Jestem mamą czteromiesięcznej córeczki. Podczas
+                    urlopu macierzyńskiego
+                    postanowiłam, że
+                    przyszedł czas na zmiany. Po wyświetleniu się postu na instagramie zapisałam się na kurs programisty
+                    w
+                    YouCode.
+                Podjęłam to wyzwanie, bo nigdy nie jest za późno na zmiany. <b>Marzenia trzeba
+                    spęłniać!</b></p>
+        </section>
+        <section class="section" id="zawodowo">
+            <h2 class="section__subheader">Zawodowo</h2>
+            <p class="section__paragraph section__paragraph--brighter">Skończyłam studia licencjackie na kierunku
+                kosmetologia na Collegium Medicum w Bydgoszczy. Póżniej
+                przeniosłam
+                sie na studia magisterskie na Uniwersytecie Ekonomicznym w Poznaniu. Tam studiowałam Towaroznawstwo.
+                Wyspecjalizowałam się w Designie i komercjalizacji produktu.</p>
+            <p class="section__paragraph">Po studiach pracowałam jako specjalista ds. sprzedaży w firmie zajmującej się
+                sprzedażą opraw
+                okularowych.
+                Jednak
+                stwierdziłam, że to nie dla mnie. Mam nadzieję, że <span class="paragraph__interestingElement">niedługo
+                    będę mogła napisać o sobie programista.</span></p>
+        </section>
+        <section class="section" id="hobby">
+            <h2 class="section__subheader">Hobby</h2>
+            <p class="section__paragraph">Od 12 lat moją pasją jest jeździectwo. Na codzień trenuje w stajni pod
+                Bydgoszczą.
+                Startuje w
+                konkurencji skoków
+                przez przeszkody na poziomie ogólnopolskim. Jest to <strong>bardzo trudny i wymagający sport</strong>,
+                ale
+                dający ogromną satysfakcję. <br>Jak to powiedział W. Churchill <i>Żadna godzina życia nie została
+                    zmarnowana,
+                    gdy spędziło się ją w siodle.</i></p>
+            <table class="table">
+                <caption class="table__caption">Najlepsi polscy jeźdźcy w dyscyplinie skoków przez przeszkody
+                </caption>
+
+                <tr class="table__tableRow">
+                    <th class="table__tableCell table__tableHeader table__tableRow" scope="col">Imię i nazwisko
+                        zawodnika</th>
+                    <th class="table__tableCell table__tableHeader" scope="col">Dosiadane konie</th>
+                    <th class="table__tableCell table__tableHeader" scope="col">Miejsce w rankingu PZJ (Polska)</th>
+                    <th class="table__tableCell table__tableHeader" scope="col">Miejsce w rankingu FEI (Świat)</th>
+                </tr>
+                <tr class="table__tableRow">
+                    <th class="table__tableCell table__tableHeader" scope="row" rowspan="2">Jarosław Skrzyczyński
+                        </th>
+                    <td class="table__tableCell">Inturido</td>
+                    <td class="table__tableCell" rowspan="2">1</td>
+                    <td class="table__tableCell" rowspan="2">227</td>
+                </tr>
+                <tr class="table__tableRow">
+                    <td class="table__tableCell">Jerico</td>
+                </tr>
+                <tr class="table__tableRow">
+                    <th class="table__tableCell table__tableHeader" scope="row">Przemysław Konopacki</th>
+                    <td class="table__tableCell">Home-run</td>
+                    <td class="table__tableCell">2</td>
+                    <td class="table__tableCell">260</td>
+                </tr>
+                <tr class="table__tableRow">
+                    <th class="table__tableCell table__tableHeader" scope="row" rowspan="2">Maksymilian Wechta</th>
+                    <td class="table__tableCell">Chepetto</td>
+                    <td class="table__tableCell" rowspan="2">3</td>
+                    <td class="table__tableCell" rowspan="2">300</td>
+                </tr>
+                <tr class="table__tableRow">
+                    <td class="table__tableCell">Cassiopeia</td>
+                </tr>
+                <tr class="table__tableRow">
+                    <th class="table__tableCell table__tableHeader" scope="row">Andrzej Opłatek</th>
+                    <td class="table__tableCell">Diaroubet</td>
+                    <td class="table__tableCell">4</td>
+                    <td class="table__tableCell">262</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer class="footer">Copyright by Weronika Łopato-Jędrasik, wrzesień 2022</footer>
+</body>
+
+
+
+</html>

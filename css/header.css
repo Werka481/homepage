@@ -1,0 +1,26 @@
+.header {
+    color: #0f100e;
+    text-align: center;
+    font-family: "Lato", serif;
+}
+
+.header__title {
+    font-weight: normal;
+}
+
+.header__paragraph {
+    text-align: right;
+}
+
+.header__buttonThemeElement {
+    color: #f5f5dc;
+    background-color: #5d5345;
+    padding: 4px;
+    outline-offset: 1px;
+    outline-style: outset;
+    border: 2px #000 solid;
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    margin-right: 5px;
+}
