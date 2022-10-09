@@ -9,8 +9,8 @@
         const buttonThemeElement = document.querySelector(".js-header__buttonTheme");
 
         body.classList.toggle("body--dark");
-        themeNameElement.innerText = body.classList.contains("body--dark") ? "jaśniejszy" : "ciemniejszy"
-    };
+        themeNameElement.innerText = body.classList.contains("body--dark") ? "jaśniejszy" : "ciemniejszy";
+    }
 
     const onRemoveImage = () => {
         const buttonElement = document.querySelector(".js-buttonElement");
