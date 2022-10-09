@@ -1,20 +1,36 @@
-console.log("Cześć!");
+{
+    const welcome = () => {
+        console.log("Hello!");
+    }
 
-let buttonElement = document.querySelector(".js-buttonElement");
-let imageElement = document.querySelector(".js-imageElement");
-let buttonThemeElement = document.querySelector(".js-header__buttonTheme");
-let body = document.querySelector(".js-body");
-let themeNameElement = document.querySelector(".js-themeName");
+    const onChangeBackgroundClick = () => {
+        const body = document.querySelector(".js-body");
+        const themeNameElement = document.querySelector(".js-themeName");
+        const buttonThemeElement = document.querySelector(".js-header__buttonTheme");
 
-buttonElement.addEventListener("click", () => {
-    imageElement.remove();
-})
+        body.classList.toggle("body--dark");
+        themeNameElement.innerText = body.classList.contains("body--dark") ? "jaśniejszy" : "ciemniejszy"
+    };
 
-buttonThemeElement.addEventListener("click", () => {
-    body.classList.toggle("body--dark");
+    const onRemoveImage = () => {
+        const buttonElement = document.querySelector(".js-buttonElement");
+        const imageElement = document.querySelector(".js-imageElement");
 
-    themeNameElement.innerText = body.classList.contains("body--dark")
-        ? "jaśniejszy"
-        : "ciemniejszy"
-})
+        imageElement.remove();
+    }
+
+    const init = () => {
+        const buttonThemeElement = document.querySelector(".js-header__buttonTheme");
+        const buttonElement = document.querySelector(".js-buttonElement");
+
+        buttonElement.addEventListener("click", onRemoveImage);
+        buttonThemeElement.addEventListener("click", onChangeBackgroundClick);
+
+        welcome();
+
+    }
+
+    init();
+
+}
 
