@@ -3,7 +3,7 @@
         console.log("Hello!");
     }
 
-    const onChangeBackgroundClick = () => {
+    const toggleBackground = () => {
         const body = document.querySelector(".js-body");
         const themeNameElement = document.querySelector(".js-themeName");
         const buttonThemeElement = document.querySelector(".js-header__buttonTheme");
@@ -12,7 +12,7 @@
         themeNameElement.innerText = body.classList.contains("body--dark") ? "jaśniejszy" : "ciemniejszy";
     }
 
-    const onRemoveImage = () => {
+    const removeImage = () => {
         const buttonElement = document.querySelector(".js-buttonElement");
         const imageElement = document.querySelector(".js-imageElement");
 
@@ -23,8 +23,8 @@
         const buttonThemeElement = document.querySelector(".js-header__buttonTheme");
         const buttonElement = document.querySelector(".js-buttonElement");
 
-        buttonElement.addEventListener("click", onRemoveImage);
-        buttonThemeElement.addEventListener("click", onChangeBackgroundClick);
+        buttonElement.addEventListener("click", removeImage);
+        buttonThemeElement.addEventListener("click", toggleBackground);
 
         welcome();
 
